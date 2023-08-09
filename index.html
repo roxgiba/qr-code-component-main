@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        font-family: Outfit;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+      }
+      .background {
+        background-color: hsl(212, 45%, 89%);
+      }
+      .mainContainer {
+        background-color: hsl(0, 0%, 100%);
+        width: 400px;
+        height: 650px;
+        border-radius: 8%;
+      }
+      .QRspace {
+        width: 95%;
+        border-radius: inherit;
+      }
+      .QRimage {
+        padding: 10px;
+        border-radius: inherit;
+        width: 100%;
+      }
+      .text {
+        line-height: 1.6;
+        padding: 5px 10px 20px 10px;
+      }
+      .title {
+        font-size: 700;
+      }
+      .paragraph {
+        color: hsl(220, 15%, 55%);
+      }
+    </style>
+  </head>
+  <body class="background">
+    <div class="mainContainer">
+      <div class="QRspace">
+        <img class="QRimage" src="./images/image-qr-code.png" />
+      </div>
+      <div class="text">
+        <h1 class="title">
+          Improve your front-end skills by building projects
+        </h1>
+        <p class="paragraph">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
